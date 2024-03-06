@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+:root 
+{
+
+    --main-color      : #6914fb;
+    --dark-main-color : #4b0db8;
+
+    --text-color      : #f5f5f5;
+
+    --f-dark          : #020202;
+    --s-dark          : #121212;
+    --t-dark          : #222222; 
+
+    --failure         : #f45f5f;
+
+}
+
+* 
+{
+
+    margin          :                   0px;
+    padding         :                   0px;
+    font-family     : 'Poppins', sans-serif;
+    box-sizing      :            border-box;
+    text-decoration :                  none;
+
+}
+
+body { background-color: var(--f-dark); }
+
+section#chat 
+{
+
+    height          :  100vh;
+    display         :   flex;
+    justify-content : center;
+    align-items     : center;
+
+}
+
+section#chat main#chat__main 
+{
+
+    padding          :       15px 25px 25px 25px;
+    background-color :             var(--s-dark);
+    box-shadow       : 0px 0px 3px var(--s-dark);
+    border-radius    :                       3px;
+
+}
+
+section#chat main#chat__main div#chat__main-new_message 
+{
+    
+    display         :   flex;
+    justify-content : center;
+
+}
+
+section#chat main#chat__main div#chat__main-new_message form input, 
+section#chat main#chat__main div#chat__main-new_message form textarea, 
+section#chat main#chat__main div#chat__main-new_message form button 
+{
+
+    display   :             block;
+    outline   :              none;
+    border    :              none;
+    font-size :               9pt;
+    color     : var(--text-color);
+    opacity   :               0.8;
+
+}
+
+section#chat main#chat__main div#chat__main-new_message form input,
+section#chat main#chat__main div#chat__main-new_message form textarea 
+{
+
+    background-color :             var(--f-dark);
+    box-shadow       : 0px 0px 3px var(--f-dark);
+    border-radius    :                       3px;
+    margin           :                  10px 0px;
+
+}
+
+section#chat main#chat__main div#chat__main-new_message form input 
+{
+
+    padding : 0px 10px;
+    width   :    350px;
+    height  :     40px;
+
+}
+
+section#chat main#chat__main div#chat__main-new_message form textarea 
+{
+
+    padding : 8px 10px;
+    width   :    350px;
+    height  :     70px;
+    resize  :     none;
+
+}
+
+section#chat main#chat__main div#chat__main-new_message form button 
+{
+
+    padding          :                      0px 16px;
+    height           :                          40px;
+    background-color :             var(--main-color);
+    box-shadow       : 0px 0px 3px var(--main-color);
+    border-radius    :                         200px;
+    margin           :            30px auto 0px auto;
+    cursor           :                       pointer;
+    transition       :                          0.6s;
+
+}
+
+section#chat main#chat__main div#chat__main-new_message form button i
+{
+
+    margin-right : 8px;
+    opacity      : 0.8;
+
+}
+
+section#chat main#chat__main div#chat__main-new_message form button:hover 
+{
+
+    background-color :             var(--dark-main-color);
+    box-shadow       : 0px 0px 3px var(--dark-main-color);
+
+}
+
+section#chat main#chat__main div#chat__main-messages 
+{
+
+    width            :                     500px;
+    height           :                     350px;
+    background-color :             var(--f-dark);
+    box-shadow       : 0px 0px 3px var(--f-dark);
+    border-radius    :                       3px;
+    padding          :                 10px 25px;
+    margin-top       :                      50px;
+
+}
+
+section#chat main#chat__main div#chat__main-messages div#chat__main-messages__main 
+{
+
+    max-height    : 350px;
+    overflow      :  auto;
+    padding-right :  25px;
+
+}
+
+section#chat main#chat__main div#chat__main-messages div#chat__main-messages__main::-webkit-scrollbar { width: 8px; }
+
+section#chat main#chat__main div#chat__main-messages div#chat__main-messages__main::-webkit-scrollbar-track 
+{
+
+    background-color :             var(--s-dark);
+    box-shadow       : 0px 0px 3px var(--s-dark);
+    border-radius    :                       3px;
+
+}
+
+section#chat main#chat__main div#chat__main-messages div#chat__main-messages__main::-webkit-scrollbar-thumb 
+{
+
+    background-color : var(--t-dark);
+    border-radius    :         200px;
+
+}
+
+section#chat main#chat__main div#chat__main-messages div#chat__main-messages__main div.chat__main-messages__main-message 
+{
+
+    padding          :                 10px 15px;
+    background-color :             var(--s-dark);
+    box-shadow       : 0px 0px 3px var(--s-dark);
+    border-radius    :                     200px;
+    margin           :                  15px 0px;
+
+}
+
+section#chat main#chat__main div#chat__main-messages div#chat__main-messages__main div.chat__main-messages__main-message p 
+{
+
+    font-size :               9pt;
+    color     : var(--text-color);
+    opacity   :               0.8;
+
+}
+
+section#chat main#chat__main div#chat__main-messages div#chat__main-messages__main div.chat__main-messages__main-message p span { opacity: 0.6; }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Chat</title>
+
+    <link rel="stylesheet" href="/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js" integrity="sha512-tE1z+95+lMCGwy+9PnKgUSIeHhvioC9lMlI7rLWU0Ps3XTdjRygLcy4mLuL0JAoK4TLdQEyP0yOl/9dMOqpH/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <section id="chat">
+        <main id="chat__main">
+
+            <div id="chat__main-new_message">
+                <form>
+
+                    <input type="text" name="username" id="username" placeholder="Username">
+                    <textarea name="message" id="message" placeholder="Your Message..."></textarea>
+
+                    <button type="button" id="chat__main-new_message__form-send_button"><i class="fa-solid fa-angles-right"></i>Send Message</button>
+
+                </form>
+            </div>
+
+            <div id="chat__main-messages">
+                <div id="chat__main-messages__main">
+
+                </div>
+            </div>
+
+        </main>
+    </section>
+
+    <script type="text/javascript" src="/main.js"></script>
+
+</body>
+</html>
